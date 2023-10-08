@@ -40,7 +40,9 @@ const BlogPostCard = ({ post, index, showSummary }) => {
             {siteConfig('POST_TITLE_ICON') && (
               <NotionIcon icon={post.pageIcon} />
             )}{' '}
-            <span className='menu-link'>{post.title}</span>
+            <h2>
+              <span className="menu-link">{post.title}</span>
+            </h2>
           </SmartLink>
 
           <div
@@ -80,11 +82,13 @@ const BlogPostCard = ({ post, index, showSummary }) => {
           </div>
 
           {(!showPreview || showSummary) && !post.results && (
-            <p
-              {...aosProps}
-              className='mt-4 mb-12 text-gray-700 dark:text-gray-300 text-sm font-light leading-7'>
-              {post.summary}
+            <h3>
+              <p
+                {...aosProps}
+                className="mt-4 mb-12 text-gray-700 dark:text-gray-300 text-sm font-light leading-7">
+                {post.summary}
             </p>
+            </h3>
           )}
 
           {/* 搜索结果 */}
