@@ -31,7 +31,7 @@ const BlogPostCard = ({ post, showSummary }) => {
             className={`cursor-pointer text-3xl ${showPreview ? 'text-center' : ''
               } leading-tight text-gray-700 dark:text-gray-100 hover:text-blue-500 dark:hover:text-blue-400`}>
 
-            <NotionIcon icon={post.pageIcon} /> <h2><span className='menu-link'>{post.title}</span></h2>
+        <h2><NotionIcon icon={post.pageIcon} /> <span className='menu-link'>{post.title}</span></h2>
 
           </Link>
 
