@@ -31,7 +31,7 @@ const BlogPostCard = ({ post, showSummary }) => {
             className={`cursor-pointer text-3xl ${showPreview ? 'text-center' : ''
               } leading-tight text-gray-700 dark:text-gray-100 hover:text-blue-500 dark:hover:text-blue-400`}>
 
-            <NotionIcon icon={post.pageIcon} /> <span className='menu-link'>{post.title}</span>
+            <NotionIcon icon={post.pageIcon} /> <h2><span className='menu-link'>{post.title}</span></h2>
 
           </Link>
 
@@ -74,6 +74,7 @@ const BlogPostCard = ({ post, showSummary }) => {
           </div>
 
           {(!showPreview || showSummary) && !post.results && (
+            <h3>
             <p data-aos="fade-down"
                 data-aos-duration="500"
                 data-aos-delay="100"
@@ -82,6 +83,7 @@ const BlogPostCard = ({ post, showSummary }) => {
                 className="mt-4 mb-12 text-gray-700 dark:text-gray-300 text-sm font-light leading-7">
               {post.summary}
             </p>
+            </h3>
           )}
 
           {/* 搜索结果 */}
