@@ -97,6 +97,8 @@ const CommonScript = () => {
       />
     )}
 
+    <script defer data-domain="xingstarx.top" src="https://app.pageview.app/js/script.js"></script>
+
     {/* 谷歌统计 */}
     {BLOG.ANALYTICS_GOOGLE_ID && (<>
       <script async
