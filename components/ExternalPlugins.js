@@ -220,7 +220,7 @@ const ExternalPlugin = props => {
 
       {ANALYTICS_51LA_ID && ANALYTICS_51LA_CK && (
         <>
-          <script id='LA_COLLECT' src='//sdk.51.la/js-sdk-pro.min.js' defer />
+          <script id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js" defer />
           {/* <script async dangerouslySetInnerHTML={{
               __html: `
                     LA.init({id:"${ANALYTICS_51LA_ID}",ck:"${ANALYTICS_51LA_CK}",hashMode:true,autoTrack:true})
@@ -233,7 +233,7 @@ const ExternalPlugin = props => {
         <>
           <script
             id={CHATBASE_ID}
-            src='https://www.chatbase.co/embed.min.js'
+            src="https://www.chatbase.co/embed.min.js"
             defer
           />
           <script
@@ -274,6 +274,8 @@ const ExternalPlugin = props => {
           />
         </>
       )}
+
+      <script defer data-domain="xingstarx.top" src="https://app.pageview.app/js/script.js"></script>
 
       {COMMENT_DAO_VOICE_ID && (
         <>
@@ -327,11 +329,11 @@ const ExternalPlugin = props => {
         <>
           <Head>
             {/* 提前连接到广告服务器 */}
-            <link rel='preconnect' href='https://cdn.wwads.cn' />
+            <link rel="preconnect" href="https://cdn.wwads.cn" />
           </Head>
           <ExternalScript
-            type='text/javascript'
-            src='https://cdn.wwads.cn/js/makemoney.js'
+            type="text/javascript"
+            src="https://cdn.wwads.cn/js/makemoney.js"
           />
         </>
       )}
@@ -348,7 +350,7 @@ const ExternalPlugin = props => {
       {COMMENT_GITTER_ROOM && (
         <>
           <script
-            src='https://sidecar.gitter.im/dist/sidecar.v1.js'
+            src="https://sidecar.gitter.im/dist/sidecar.v1.js"
             async
             defer
           />
