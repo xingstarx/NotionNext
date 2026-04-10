@@ -132,6 +132,9 @@ const ExternalPlugin = props => {
   const UMAMI_HOST = siteConfig('UMAMI_HOST', null, NOTION_CONFIG)
   const UMAMI_ID = siteConfig('UMAMI_ID', null, NOTION_CONFIG)
 
+  const PLAUSIBLE_DOMAIN = siteConfig('PLAUSIBLE_DOMAIN', null, NOTION_CONFIG)
+  const PLAUSIBLE_SCRIPT_URL = siteConfig('PLAUSIBLE_SCRIPT_URL', null, NOTION_CONFIG)
+
   // 自定义样式css和js引入
   if (isBrowser) {
     // 初始化AOS动画
@@ -404,6 +407,11 @@ const ExternalPlugin = props => {
       {/* UMAMI 统计 */}
       {UMAMI_ID && (
         <script async defer src={UMAMI_HOST} data-website-id={UMAMI_ID}></script>
+      )}
+
+      {/* Plausible 统计 */}
+      {PLAUSIBLE_DOMAIN && PLAUSIBLE_SCRIPT_URL && (
+        <script defer data-domain={PLAUSIBLE_DOMAIN} src={PLAUSIBLE_SCRIPT_URL}></script>
       )}
 
       {/* 谷歌统计 */}

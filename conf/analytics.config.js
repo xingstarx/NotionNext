@@ -36,5 +36,9 @@ module.exports = {
   UMAMI_HOST: process.env.NEXT_PUBLIC_UMAMI_HOST || 'https://cloud.umami.is/script.js', // umami的服务地址
   UMAMI_ID: process.env.NEXT_PUBLIC_UMAMI_ID || '', // umami的id
 
+  // Plausible 统计
+  PLAUSIBLE_DOMAIN: process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN || 'xingstarx.top', // 你的域名
+  PLAUSIBLE_SCRIPT_URL: process.env.NEXT_PUBLIC_PLAUSIBLE_SCRIPT_URL || 'https://app.pageview.app/js/plausible.js', // Plausible脚本地址
+
   // <---- 站点统计
 }
